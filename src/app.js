@@ -27,9 +27,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 useRouter(app);
-app.use('/', swaggerUi.serve, swaggerUi.setup(doc));
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(doc));
 
 app.listen(process.env.PORT || 8081, () => {
-  console.log("Servidor iniciado");
   logger.info(`Servidor em execução na porta ${process.env.PORT}`);
 });
