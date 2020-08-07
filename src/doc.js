@@ -5,8 +5,8 @@ export const doc = {
     version: '1.0.0',
     title: 'Cash Back Revendedores',
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
+  host: 'api-cash-back.herokuapp.com',
+  schemes: ['https'],
   tags: [
     {
       name: 'Compra',
